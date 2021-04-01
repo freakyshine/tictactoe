@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="650">
+        Title="MainWindow" Height="650" Width="650"
+        ResizeMode="NoResize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -35,5 +36,17 @@
         <Button x:Name="b7" HorizontalAlignment="Center" VerticalAlignment="Center" Click="b1_Click" Grid.Column="0" Grid.Row="3" Width="100px" Height="100px"></Button>      
         <Button x:Name="b8" HorizontalAlignment="Center" VerticalAlignment="Center" Click="b1_Click" Grid.Column="1" Grid.Row="3" Width="100px" Height="100px"></Button>      
         <Button x:Name="b9" HorizontalAlignment="Center" VerticalAlignment="Center" Click="b1_Click" Grid.Column="2" Grid.Row="3" Width="100px" Height="100px"></Button>      
+        <!-- 00000000000000000000000000000000 -->
+        
+        <!-- Player Stats -->
+        <Label Content="Turn:" FontSize="25px" VerticalAlignment="Center" Padding="5px" Grid.Column="3" Grid.Row="1"></Label>
+        <TextBlock Text="X" FontSize="80px" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="4"></TextBlock>
+        
+        <!-- Settings -->
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="3">
+            <TextBox Text="Settings:" FontSize="25px" Grid.Column="3" Grid.Row="2"></TextBox>
+            <Label Content="COM" Grid.Row="2" Grid.Column="3" FontSize="15px"></Label>
+        </StackPanel>
+
     </Grid>
 </Window>

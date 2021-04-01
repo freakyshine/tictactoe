@@ -25,7 +25,7 @@ namespace TicTacToe
             InitializeComponent();
         }
 
-        private void b1_Click(object sender, RoutedEventArgs e)
+        private void button_click(object sender, RoutedEventArgs e)
         {
 
         }

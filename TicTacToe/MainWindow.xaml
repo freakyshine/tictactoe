@@ -59,7 +59,7 @@
                 <Label Content="PvE" FontSize="15px"></Label>
                 <RadioButton GroupName="multiplayer_type" IsChecked="False" Name="pve_multi_type" VerticalAlignment="Center"></RadioButton>
             </StackPanel>
-            <TextBlock Text="Difficulty:" FontSize="16px"></TextBlock>
+            <TextBlock Text="COM difficulty:" FontSize="16px"></TextBlock>
             <StackPanel Orientation="Horizontal">
                 <Label Content="Easy" FontSize="15px"></Label>
                 <RadioButton GroupName="difficulty_type" IsChecked="False" Name="easy_difficulty" VerticalAlignment="Center"></RadioButton>

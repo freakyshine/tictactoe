@@ -68,5 +68,7 @@
             </StackPanel>
         </StackPanel>
 
+        <Button x:Name="start_game" Content="Start" VerticalAlignment="Center" Click="start_game" Padding="5px" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" FontSize="20px"></Button>
+
     </Grid>
 </Window>

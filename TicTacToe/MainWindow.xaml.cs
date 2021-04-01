@@ -29,5 +29,10 @@ namespace TicTacToe
         {
 
         }
+
+        private void start_game(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

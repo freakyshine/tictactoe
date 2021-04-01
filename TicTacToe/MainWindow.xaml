@@ -40,11 +40,18 @@
         
         <!-- Player Stats -->
         <Label Content="Turn:" FontSize="25px" VerticalAlignment="Center" Padding="5px" Grid.Column="3" Grid.Row="1"></Label>
-        <TextBlock Text="X" FontSize="80px" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="4"></TextBlock>
+        <TextBlock Text="-" FontSize="80px" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="4"></TextBlock>
         
         <!-- Settings -->
         <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="3" Grid.RowSpan="2">
             <TextBlock Text="Settings:" FontSize="25px" Grid.Column="3" Grid.Row="2"></TextBlock>
+            <TextBlock Text="Starting player:" FontSize="16px"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="X" FontSize="15px"></Label>
+                <RadioButton GroupName="start_player" IsChecked="False" Name="start_x" VerticalAlignment="Center"></RadioButton>
+                <Label Content="O" FontSize="15px"></Label>
+                <RadioButton GroupName="start_player" IsChecked="False" Name="start_o" VerticalAlignment="Center"></RadioButton>
+            </StackPanel>
             <TextBlock Text="Multiplayer type:" FontSize="16px"></TextBlock>
             <StackPanel Orientation="Horizontal">
                 <Label Content="PvP" FontSize="15px"></Label>

@@ -43,9 +43,22 @@
         <TextBlock Text="X" FontSize="80px" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="4"></TextBlock>
         
         <!-- Settings -->
-        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="3">
-            <TextBox Text="Settings:" FontSize="25px" Grid.Column="3" Grid.Row="2"></TextBox>
-            <Label Content="COM" Grid.Row="2" Grid.Column="3" FontSize="15px"></Label>
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="3" Grid.RowSpan="2">
+            <TextBlock Text="Settings:" FontSize="25px" Grid.Column="3" Grid.Row="2"></TextBlock>
+            <TextBlock Text="Multiplayer type:" FontSize="16px"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="PvP" FontSize="15px"></Label>
+                <RadioButton GroupName="multiplayer_type" IsChecked="False" Name="pvp_multi_type" VerticalAlignment="Center"></RadioButton>
+                <Label Content="PvE" FontSize="15px"></Label>
+                <RadioButton GroupName="multiplayer_type" IsChecked="False" Name="pve_multi_type" VerticalAlignment="Center"></RadioButton>
+            </StackPanel>
+            <TextBlock Text="Difficulty:" FontSize="16px"></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Easy" FontSize="15px"></Label>
+                <RadioButton GroupName="difficulty_type" IsChecked="False" Name="easy_difficulty" VerticalAlignment="Center"></RadioButton>
+                <Label Content="Insane" FontSize="15px"></Label>
+                <RadioButton GroupName="difficulty_type" IsChecked="False" Name="insane_difficulty" VerticalAlignment="Center"></RadioButton>
+            </StackPanel>
         </StackPanel>
 
     </Grid>

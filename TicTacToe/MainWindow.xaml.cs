@@ -25,7 +25,12 @@ namespace TicTacToe
             InitializeComponent();
         }
 
-        private void button_click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// The actions taken, when a field position button is pressed
+        /// </summary>
+        /// <param name="sender">The object from whom this method is called</param>
+        /// <param name="e">E</param>
+        private void position_click(object sender, RoutedEventArgs e)
         {
 
         }

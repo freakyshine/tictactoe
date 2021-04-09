@@ -30,7 +30,7 @@ namespace TicTacToe
         /// </summary>
         /// <param name="sender">The object from whom this method is called</param>
         /// <param name="e">E</param>
-        private void position_click(object sender, RoutedEventArgs e)
+        private void Position_click(object sender, RoutedEventArgs e)
         {
 
         }
@@ -40,7 +40,7 @@ namespace TicTacToe
         /// </summary>
         /// <param name="sender">The object from whom this method is called</param>
         /// <param name="e">E</param>
-        private void start_game(object sender, RoutedEventArgs e)
+        private void Start_game(object sender, RoutedEventArgs e)
         {
 
         }

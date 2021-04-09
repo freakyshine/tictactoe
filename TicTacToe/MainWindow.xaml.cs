@@ -45,15 +45,26 @@ namespace TicTacToe
 
         }
     }
+
     /// <summary>
     /// Represents a Game object
     /// </summary>
     public class Game
     {
+        /// <summary>
+        /// The player object that holds player one
+        /// </summary>
         public Player Player_One { get; set; }
+        /// <summary>
+        /// The player object that holds player two
+        /// </summary>
         public Player Player_Two { get; set; }
+        /// <summary>
+        /// The Grid object that holds the grid with all fields
+        /// </summary>
         public Grid Game_Grid { get; set; }
     }
+
     /// <summary>
     /// Represents a Player object
     /// </summary>
@@ -61,6 +72,7 @@ namespace TicTacToe
     {
 
     }
+
     /// <summary>
     /// Represents a Grid object
     /// </summary>

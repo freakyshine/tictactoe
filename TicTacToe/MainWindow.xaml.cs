@@ -35,21 +35,35 @@ namespace TicTacToe
 
         }
 
+        /// <summary>
+        /// The actions taken when starting the game
+        /// </summary>
+        /// <param name="sender">The object from whom this method is called</param>
+        /// <param name="e">E</param>
         private void start_game(object sender, RoutedEventArgs e)
         {
 
         }
     }
+    /// <summary>
+    /// Represents a Game object
+    /// </summary>
     public class Game
     {
         public Player Player_One { get; set; }
         public Player Player_Two { get; set; }
         public Grid Game_Grid { get; set; }
     }
+    /// <summary>
+    /// Represents a Player object
+    /// </summary>
     public class Player
     {
 
     }
+    /// <summary>
+    /// Represents a Grid object
+    /// </summary>
     public class Grid
     {
         /// <summary>

@@ -35,4 +35,31 @@ namespace TicTacToe
 
         }
     }
+    public class Game
+    {
+        public Player Player_One { get; set; }
+        public Player Player_Two { get; set; }
+        public Grid Game_Grid { get; set; }
+    }
+    public class Player
+    {
+
+    }
+    public class Grid
+    {
+        /// <summary>
+        /// The grid which stores the values of each position
+        /// </summary>
+        public int[,] Grid_Matrix { get; set; }
+
+        /// <summary>
+        /// This constructs a Grid
+        /// </summary>
+        /// <param name="grid_size">This defines how big the grid is. Grid size is in square.</param>
+        public Grid(int grid_size = 3)
+        {
+            // Initializing matrix for grid, a usual tic tac toe grid has 3 by 3 pieces
+            Grid_Matrix = new int[grid_size, grid_size];
+        }
+    }
 }
